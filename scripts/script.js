@@ -158,4 +158,85 @@ let str_3 = 'Hello';
 let str_4 = 'world';
 console.log(str_3 + ' ' + str_4);
 
-// !Длина строки в JavaScript
+// *Запишите в переменную какую-нибудь строку. Выведите на экран длину вашей строки.
+
+let str_5 = 'Just some text';
+
+console.log(str_5.length);
+console.log('Just some text'.length);
+console.log(str_5.length + 6);
+
+// *Перепишите следующий код через вставку переменных:
+
+let str1 = 'xxx';
+let str2 = 'yyy';
+// let txt  = 'aaa ' + str1 + ' bbb ' + str2 + ' ccc';
+
+let txt = `aaa ${str1} bbb ${str2} ccc`;
+console.log(txt);
+
+// *Запишите в переменную str строку, состоящую из символов 'a', 'b', 'c', причем после каждого символа, кроме последнего, должен стоять перенос строки.
+
+str = `a
+b
+c`;
+console.log(str);
+
+let und;
+console.log(und);
+
+// ?null - ничего там нет
+
+// *Присвойте переменной значение true. Выведите эту переменную на экран.
+
+let tr = true;
+console.log(tr);
+
+// *Присвойте переменной значение false. Выведите эту переменную на экран.
+
+let fal = false;
+console.log(fal);
+
+// *Сделайте две строки. Перемножьте их друг на друга. Выведите результат умножения на экран.
+
+let str_6 = 'one';
+let str_7 = 'two';
+let resultNaN = str_6 * str_7;
+console.log(resultNaN);
+
+// *Поделите число 10 на 0. Выведите результат на экран.
+
+console.log(10 / 0);
+
+// *Поделите число -10 на 0. Выведите результат на экран.
+
+console.log(-10 / 0);
+
+// *Выведите в консоль все известные вам типы данных. Посмотрите, чем отличается их цвет.
+
+let num = 1;
+
+let sting = 'str';
+
+let boolean = true;
+
+let bigInt = 1n;
+
+let undef = undefined;
+
+let someNull = null;
+
+let sumb = Symbol('id');
+
+let obj = {};
+
+console.log(num, sting, boolean, bigInt, undef, someNull,sumb, obj);
+
+// *Сделайте константу PI и с ее помощью вычислите длину какой-нибудь окружности по ее радиусу.
+
+const PI = 3.14;
+let radius = 10;
+let someL = 2 * PI * radius;
+console.log(someL);
+
+// !Автоматическое преобразование типов данных
