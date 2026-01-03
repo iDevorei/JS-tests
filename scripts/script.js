@@ -293,4 +293,57 @@ num_2 = 4569;
 
 console.log(String(num_1).length + String(num_2).length);
 
-// !Преобразование логического типа в JavaScript
+// *Дана строка 'abcde'. Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'c', символ 'e'.
+
+str = 'abcde';
+console.log(str[0], str[2], str[str.length - 1]);
+
+// *Дана переменная со строкой 'abcde'. Обращаясь к отдельным символам этой строки запишите в новую переменную символы этой строки в обратном порядке, то есть 'edcba'.
+
+str = 'abcde';
+let reverseStr = str[str.length - 1] + str[3] + str[2] + str[1] + str[0];
+console.log(reverseStr);
+
+// *Дана переменная str со строкой 'abcde' и переменная num с номером символа. Выведите на экран символ, номер которого хранится в переменной num.
+
+num = 3;
+console.log(str[num]);
+
+// *Дана строка. Выведите на экран ее последний символ.
+
+str = 'JustSomeText';
+console.log(str[str.length - 1]);
+
+// *Дана строка. Выведите на экран ее предпоследний символ.
+
+console.log(str[str.length - 2]);
+
+// *Дана строка. Выведите на экран ее предпредпоследний символ.
+
+console.log(str[str.length - 3]);
+
+// *Дана строка '12345'. Найдите сумму цифр этой строки.
+
+str = '12345';
+let sumOfNum = Number(str[0]) + Number(str[1]) + Number(str[2]) + Number(str[3]) + Number(str[4]);
+console.log(sumOfNum);
+
+// *Дано число 12345. Найдите сумму цифр этого числа.
+
+str = 12345;
+let numToStr = String(str);
+console.log(numToStr);
+sumOfNum = Number(numToStr[0]) + Number(numToStr[1]) + Number(numToStr[2]) + Number(numToStr[3]) + Number(numToStr[4]);
+console.log(sumOfNum);
+
+// *Дано число 12345. Найдите произведение цифр этого числа.
+
+let multiply = numToStr[0] * numToStr[1] * numToStr[2] * numToStr[3] * numToStr[4];
+console.log(multiply);
+
+// *Дано число 12345. Переставьте цифры этого числа в обратном порядке.
+
+let reverseNum = numToStr[numToStr.length - 1] + numToStr[3] + numToStr[2] + numToStr[1] + numToStr[0];
+console.log(reverseNum);
+
+// !Операции для изменения переменной в JavaScript
