@@ -69,4 +69,72 @@ console.log(objNum['c-c']);
 console.log(objNum['d 4']);
 console.log(objNum.e5);
 
-// !Изменение элементов объектов в JavaScript
+// *Дан объект:
+
+// let obj = {x: 1, y: 2, z: 3};
+// *Возведите в квадрат каждый элемент этого объекта.
+
+let objNum1 = {
+    'x': 1,
+    'y': 2,
+    'z': 3
+};
+
+objNum1['x'] = objNum1['x'] ** 2;
+console.log(objNum1['x']);
+
+objNum1.y = objNum1.y ** 2;
+console.log(objNum1.y);
+
+objNum1['z'] = objNum1['z'] ** 2;
+console.log(objNum1['z']);
+
+console.log(objNum1);
+
+// *Создайте пустой объект, а затем заполните его значениями.
+
+let objSomeData = {};
+objSomeData.name = 'Jhon';
+objSomeData['last_name'] = 'Malkovich';
+objSomeData.age = 100500;
+objSomeData['status'] = 'God-like';
+console.log(objSomeData);
+
+// *Создайте объект и убедитесь, что порядок ключей в нем не имеет значения.
+
+let objSomeNum = {
+    5: 'one',
+    3: 'two',
+    4: 'three'
+};
+
+console.log(objSomeNum);
+
+// *Получите массив ключей следующего объекта:
+
+let objNum2 = {x: 1, y: 2, z: 3};
+
+let keys = Object.keys(objNum2);
+console.log(keys);
+
+// *Найдите количество элементов в следующем объекте:
+
+objNum2 = {x: 1, y: 2, z: 3};
+
+console.log(Object.keys(objNum2).length);
+
+// *Дан следующий объект:
+
+// let obj = {x: 1, y: 2, z: 3};
+// *Дана переменная key, в которой хранится один из ключей нашего объекта. Выведите с помощью этой переменной соответствующий элемент объекта.
+
+let objNum3 = {
+    x: 1,
+    y: 2,
+    z: 3
+};
+
+let key = 'y';
+console.log(objNum3[key]);
+
+// !Ошибка обращения к элементу по ключу в JavaScript
