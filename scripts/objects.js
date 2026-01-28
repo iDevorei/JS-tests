@@ -98,3 +98,69 @@ obj_3.y = obj_3.y ** 2;
 obj_3.z = obj_3.z ** 2;
 
 console.log(obj_3);
+
+// *Создайте пустой объект, а затем заполните его значениями.
+
+let obj_empty = {
+
+};
+console.log(obj_empty);
+
+obj_empty[1] = 1;
+obj_empty.two = 'two';
+obj_empty[3] = 'number 3';
+
+console.log(obj_empty);
+
+// *Создайте объект и убедитесь, что порядок ключей в нем не имеет значения.
+
+let obj_4 = {
+    1: 'something',
+    3: 34,
+    57: 'in the end',
+    0: 72
+};
+
+console.log(obj_4);
+
+// *Получите массив ключей следующего объекта:
+
+let obj_5 = {x: 1, y: 2, z: 3};
+
+let keys = Object.keys(obj_5);
+console.log(keys);
+
+// *Найдите количество элементов в следующем объекте:
+
+let obj_num = {x: 1, y: 2, z: 3, b: 4, r: 9};
+
+console.log(Object.keys(obj_num).length);
+
+// *Дан следующий объект:
+
+let obj_6 = {x: 1, y: 2, z: 3};
+// *Дана переменная key, в которой хранится один из ключей нашего объекта. Выведите с помощью этой переменной соответствующий элемент объекта.
+
+let key = 'z';
+
+console.log(obj_6[key]);
+
+// *Исправьте ошибку, допущенную в следующем коде:
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(obj[x]);
+
+let obj_7 = {x: 1, y: 2, z: 3};
+console.log(obj_7['x']);
+
+// *Исправьте ошибку, допущенную в следующем коде:
+
+// let obj = {x: 1, y: 2, z: 3};
+// let key = 'x';
+// console.log(obj['key']);
+
+let obj_8 = {x: 1, y: 2, z: 3};
+let key_1 = 'x';
+console.log(obj_8[key_1]);
+
+// !Ошибка обращения к свойству объекта в JavaScript
