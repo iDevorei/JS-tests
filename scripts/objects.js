@@ -163,4 +163,76 @@ let obj_8 = {x: 1, y: 2, z: 3};
 let key_1 = 'x';
 console.log(obj_8[key_1]);
 
-// !Ошибка обращения к свойству объекта в JavaScript
+// *Исправьте ошибку, допущенную в следующем коде:
+
+// let obj = {x: 1, y: 2, z: 3};
+// let prop = 'x';
+// console.log(obj.prop);
+
+let obj_9 = {x: 1, y: 2, z: 3};
+let prop = 'x';
+console.log(obj_9[prop]);
+
+// *Исправьте ошибку, допущенную в следующем коде:
+
+// let obj = {x: 1, y: 2, z: 3};
+// let prop = 'x';
+// console.log(obj['prop']);
+
+let obj_01 = {x: 1, y: 2, z: 3};
+let prop_1 = 'x';
+console.log(obj_01[prop]);
+
+// *В следующем коде ключ должен был взяться из переменной. Исправьте допущенную ошибку:
+
+// let key = 'x';
+
+// let obj = {
+// 	key: 1,
+// 	y: 2,
+// 	z: 3
+// };
+
+let key_2 = 'x';
+
+let obj_02 = {
+	[key_2]: 1,
+	y: 2,
+	z: 3
+};
+
+console.log(obj_02);
+
+// *Дан объект:
+
+// let obj = {
+// 	x: 1,
+// 	y: 2,
+// 	z: 3
+// };
+// *Даны переменные:
+
+// let key1 = 'x';
+// let key2 = 'y';
+// let key3 = 'z';
+// *Сделайте так, чтобы ключи объекта брались из этих переменных.
+
+let key1 = 'x';
+let key2 = 'y';
+let key3 = 'z';
+
+let obj_03 = {
+	[key1]: 1,
+	[key2]: 2,
+	[key3]: 3
+};
+
+console.log(obj_03);
+console.log('y' in obj_03);
+console.log('t' in obj_03);
+
+delete obj_03.z
+console.log(obj_03);
+console.log('z' in obj_03);
+
+// !Типизация объектов в JavaScript
