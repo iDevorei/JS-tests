@@ -235,4 +235,4 @@ delete obj_03.z
 console.log(obj_03);
 console.log('z' in obj_03);
 
-// !Типизация объектов в JavaScript
+// !Передача объектов по ссылке в JavaScript
