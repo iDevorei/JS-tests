@@ -235,4 +235,55 @@ delete obj_03.z
 console.log(obj_03);
 console.log('z' in obj_03);
 
-// !Передача объектов по ссылке в JavaScript
+// *Перепишите следующий код через описанный подход:
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = arr[1] + arr[2];
+
+// console.log(res);
+
+const arr = [1, 2, 3, 4];
+const res = arr[1] + arr[2];
+
+console.log(res);
+
+// *Код должен вывести элемент объекта:
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(obj[x]);
+
+let obj_ex_1 = {x: 1, y: 2, z: 3};
+console.log(obj_ex_1['x']);
+
+// *Код должен вывести элемент объекта по ключу из переменной:
+
+// let obj = {x: 1, y: 2, z: 3};
+// let key = 'x';
+
+// console.log(obj.key);
+
+let obj_ex_2 = {x: 1, y: 2, z: 3};
+let key_ex_2 = 'x';
+
+console.log(obj_ex_2[key_ex_2]);
+
+// *Код должен вывести сумму элементов объекта:
+
+// let obj = {x: 1, y: 2, z: 3};
+// let sum = obj[x] + obj[y] + obj[x];
+
+// console.log(obj);
+
+let obj_ex_3 = {x: 1, y: 2, z: 3};
+let sum_ex_3 = obj_ex_3['x'] + obj_ex_3['y'] + obj_ex_3['x'];
+
+console.log(sum_ex_3);
+
+// *Код должен вывести количество элементов объекта:
+
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(obj.length);
+
+let obj_ex_4 = {x: 1, y: 2, z: 3};
+let num_of_keys = Object.keys(obj_ex_4);
+console.log(num_of_keys.length);
